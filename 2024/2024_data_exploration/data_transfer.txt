@@ -1,0 +1,13 @@
+These commands will be ran in your machine's command line/terminal
+
+Log into the BIL machine:
+ssh username@login.brainimagelibrary.org
+
+Navigate to the project directory:
+cd /bil/proj/bicanstwg 
+
+Create a directory to point your data upload to:
+mkdir *your username*
+
+Use rsync to transfer your folder up to BIL:
+rsync -lrtpDvP mouse1 username@upload.brainimagelibrary.org:/bil/proj/bicanstwg/username/
